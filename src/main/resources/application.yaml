@@ -1,0 +1,14 @@
+spring:
+  #  #  静态资源的访问前缀
+  #  mvc:
+  #    static-path-pattern: /res/**
+
+  # 静态资源路径
+  web:
+    resources:
+      static-locations: classpath:/haha/
+
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
