@@ -50,6 +50,37 @@ public class ParameterTestController {
         map.put("content", content);
         return map;
     }
+
+    @GetMapping("/cars/sell")
+    public Map carsSell(@MatrixVariable("low") Integer low,
+                        @MatrixVariable("brand") List<String> brand) {
+
+        HashMap<String, Object> map = new HashMap<>();
+        map.put("low", low);
+        map.put("brand", brand);
+        return map;
+    }
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
